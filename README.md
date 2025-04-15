@@ -10,4 +10,5 @@ npx create-next-app@latest react-adv-ecom-nextjs-ts
 ```
 ![Screenshot](external-data/readme-image/00-create-nextjsapp.png)
 
+- run project `npm run dev`
 
