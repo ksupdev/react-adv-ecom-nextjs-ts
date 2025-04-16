@@ -82,3 +82,19 @@ export default function ContactPage() {
 }
 
 ```
+
+## Use shadcn/ui template
+[official doc , installation with Next.js](https://ui.shadcn.com/docs/installation/next)
+
+### Install
+
+```shell
+npx shadcn@latest init
+```
+
+![Screenshot](external-data/readme-image/02-installshadcn.png)
+
+```shell
+npx shadcn@latest add button
+```
+- You have to install some component, after install complete. it auto add `'tw-animate-css'`

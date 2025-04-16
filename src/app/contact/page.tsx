@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { sarabun, kanit } from "../fonts";
 
 export default function ContactPage() {
@@ -8,6 +9,7 @@ export default function ContactPage() {
             <p className="font-kanit">สวัสดี kanit contact Page</p>
             <p className={sarabun.className}>สวัสดี sarabun contact Page</p>
             <p className={kanit.className}>สวัสดี kanit contact Page</p>
+            <Button className="my-3" >Go to Homepage </Button>
         </main>
     )
 }
