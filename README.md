@@ -111,3 +111,32 @@ npx shadcn@latest add button
 ```shell
 npx shadcn@latest add login-01
 ```
+
+## Route Group (for support multiple layout)
+
+- คือการสร้าง folder ที่มี `(-Name of group-)` ซึ่งจะไม่มีผลต่อยการทำ Routing อะไรเลย โดย folder นี้จะทำหน้าที่เป็น group of folder ซึ่งเราสามารถ define `layout.tsx` ให้สามารถใช้งานได้เฉพาะ components ที่อยู่ภายใน folder นี้ได้
+
+- ในส่วนของ Nested Layouts ไม่จำเป็นต้องมีการ ใช้ tags html, body ไม่งั้นจะเจอ error 
+
+``` <body> cannot contain a nested <html>.
+See this log for the ancestor stack trace.
+
+```
+how to fix
+
+```typescript
+export default function FrontLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <>
+            <AppHeader />
+            {children}
+        </>
+    );
+}
+
+```
+

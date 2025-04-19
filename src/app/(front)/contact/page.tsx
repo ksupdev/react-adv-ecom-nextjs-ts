@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { sarabun, kanit } from "../fonts";
+import { sarabun, kanit } from "@/app/fonts";
 import Link from "next/link";
 
 export default function ContactPage() {
