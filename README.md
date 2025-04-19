@@ -104,3 +104,10 @@ npx shadcn@latest add button
 [react-tailwind-snippets](https://react-tailwind-snippets.vercel.app/)
 
 [tailwindflex](https://tailwindflex.com/)
+
+## Use shadcn template
+[ref](https://ui.shadcn.com/blocks/login)
+
+```shell
+npx shadcn@latest add login-01
+```
