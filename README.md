@@ -152,6 +152,15 @@ npx shadcn@latest add dashboard-01
 
 - dynamic route => จะเป็นการ generate conent ใหม่ทุกครั้งที่มีการ render `server at request time`
 
+## Config server-only
+
+```shell
+npm install server-only
+```
+
+เป็นการกำหนดว่าถ้ามีการเรียกใช้ Method หรือ file ที่มีการกำหนด `import server-only` จากทาง client side จะมีการแจ้ง error ทันที
+
+
 
 
 
