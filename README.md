@@ -140,3 +140,11 @@ export default function FrontLayout({
 
 ```
 
+## Install Dashboard and after generate (https://ui.shadcn.com/blocks)
+
+```shell
+npx shadcn@latest add dashboard-01
+```
+
+
+
