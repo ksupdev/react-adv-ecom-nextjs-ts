@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { sarabun } from "./fonts";
+import AppHeader from "@/components/app/AppHeader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sarabun.className}>
+        <AppHeader />
         {children}
       </body>
     </html>
