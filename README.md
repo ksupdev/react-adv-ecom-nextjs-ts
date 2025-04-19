@@ -146,5 +146,17 @@ export default function FrontLayout({
 npx shadcn@latest add dashboard-01
 ```
 
+## Rendering concept
+
+- static route => จะเป็นการ Fix content ซึ่งจะสามารถเก็บ catch ได้ดีและเร็วซึ่งจะทำการ build ครั้งเดียวตั้งแต่การ Build แต่ก็สามารถจะ set เวลาให้มีการอัพเดตได้ `rendered on the server at build time`
+
+- dynamic route => จะเป็นการ generate conent ใหม่ทุกครั้งที่มีการ render `server at request time`
+
+
+
+
+
+
+
 
 
