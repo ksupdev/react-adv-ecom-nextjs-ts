@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { sarabun, kanit } from "../fonts";
+import Link from "next/link";
 
 export default function ContactPage() {
     return (
@@ -9,7 +10,12 @@ export default function ContactPage() {
             <p className="font-kanit">สวัสดี kanit contact Page</p>
             <p className={sarabun.className}>สวัสดี sarabun contact Page</p>
             <p className={kanit.className}>สวัสดี kanit contact Page</p>
-            <Button className="my-3" >Go to Homepage </Button>
+            <div className="m-10">
+                <Button variant="outline" >
+                    <Link href="/">Go to Home Page</Link>
+                </Button>
+            </div>
+
         </main>
     )
 }

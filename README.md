@@ -98,3 +98,9 @@ npx shadcn@latest init
 npx shadcn@latest add button
 ```
 - You have to install some component, after install complete. it auto add `'tw-animate-css'`
+
+
+## demo template original template
+[react-tailwind-snippets](https://react-tailwind-snippets.vercel.app/)
+
+[tailwindflex](https://tailwindflex.com/)
