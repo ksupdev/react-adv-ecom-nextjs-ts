@@ -200,6 +200,17 @@ DB_DATABASE=pu_db
 DB_PORT=3306
 ```
 
+## Setup Drizzle 
+[Link](https://orm.drizzle.team/)
+
+[Get start](https://orm.drizzle.team/docs/get-started/mysql-new)
+
+### Step 1 - Install mysql2 package
+```shell
+npm i drizzle-orm mysql2 dotenv
+npm i -D drizzle-kit tsx
+```
+
 
 
 
