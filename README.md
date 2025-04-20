@@ -161,6 +161,31 @@ npm install server-only
 เป็นการกำหนดว่าถ้ามีการเรียกใช้ Method หรือ file ที่มีการกำหนด `import server-only` จากทาง client side จะมีการแจ้ง error ทันที
 
 
+## Create .env file
+```ts
+# DATANASE_URL = "mysql://YOUR_USER:YOUR_PASSWORD@localhost:3306/YOUR_DB"
+
+DATANASE_URL = "mysql://YOUR_USER:YOUR_PASSWORD@localhost:3306/YOUR_DB"
+DB_HOST=xx.xx.xx.xx
+DB_USER=root
+DB_PASSWORD=DB_PASSWORD
+DB_DATABASE=cctx
+DB_PORT=3306
+
+01:09
+
+```
+
+## Setup database on Docker
+```
+docker compose -f /mysql-docker/docker-compose.yml up -d
+```
+
+- user : root, password : rootpassword
+- command for change root password
+```sql
+docker exec -it mysql_db mysql -u root -p'current_password' -e "ALTER USER 'root'@'%' IDENTIFIED BY 'new_password'; ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password'; FLUSH PRIVILEGES;"
+```
 
 
 

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # Change this to a secure password
+      MYSQL_DATABASE: mydb               # Your database name
+      MYSQL_USER: myuser                 # Your database user
+      MYSQL_PASSWORD: mypassword         # Change this to a secure password
+    ports:
+      - "3306:3306"  # Map container's 3306 port to host's 3306 port
+    volumes:
+      - mysql_data:/var/lib/mysql        # Persist data
+      - ./mysql-init:/docker-entrypoint-initdb.d  # Init scripts
+    command: --default-authentication-plugin=mysql_native_password
+             --character-set-server=utf8mb4
+             --collation-server=utf8mb4_unicode_ci
+             --bind-address=0.0.0.0      # Allow connections from any IP
+
+volumes:
+  mysql_data:
+    driver: local
