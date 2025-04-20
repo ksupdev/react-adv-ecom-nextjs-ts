@@ -187,6 +187,19 @@ docker compose -f /mysql-docker/docker-compose.yml up -d
 docker exec -it mysql_db mysql -u root -p'current_password' -e "ALTER USER 'root'@'%' IDENTIFIED BY 'new_password'; ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password'; FLUSH PRIVILEGES;"
 ```
 
+- change .env
+
+```
+# DATANASE_URL = "mysql://YOUR_USER:YOUR_PASSWORD@localhost:3306/YOUR_DB"
+
+DATANASE_URL = "mysql://myuser:mypassword@localhost:3306/pu_db"
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=rootpassword
+DB_DATABASE=pu_db
+DB_PORT=3306
+```
+
 
 
 
